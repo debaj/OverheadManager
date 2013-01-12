@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RezsiMeter</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_start">Overhead Manager</string>
+    <string name="title_activity_meter_reading">Óraállások</string>
+    <string name="title_activity_common">CommonActivity</string>
+    <string name="title_activity_bills">Számlák</string>
+    <string name="title_activity_backup">Mentés &amp; Helyreállítás</string>
+    <string name="title_activity_stats">Statisztika</string>
+    <string name="title_activity_locations">Helyek</string>
+        
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Mégse</string>
+    <string name="button_set">Beállít</string>
+    <string name="button_yes">Igen</string>
+    <string name="button_no">Nem</string>
+    <string name="button_save">Ment</string>
+    <string name="button_new">Új</string>
+    
+    <string name="ui_readings_readings">Óraállás rögzítése</string>
+    <string name="ui_readings_value">Óraállás:</string>
+    <string name="ui_readings_in_progress">Mentés folyamatban…</string>
+    <string name="ui_readings_value_hint">Csak számok</string>
+    <string name="ui_readings_lesser_than_previous">A rögzítendő óraállás kisebb, mint az előző rögzített érték! Biztosan elmenti?</string>
+    
+    <string name="ui_statistics_statistics">Statisztika</string>
+    <string name="ui_statistics_interval">Időszak:</string>
+    <string name="ui_statistics_readings">Leolvasások</string>
+    <string name="ui_statistics_charts">Grafikon</string>
+    <string name="ui_statistics_summary">Összefoglaló</string>
+    <string name="ui_statistics_show">Mutat</string>
+    
+    <string name="ui_statistics_readings_meter">Óraállás: </string>
+    <string name="ui_statistics_readings_difference">Fogyasztás: </string>
+    
+    <string name="ui_edit_reading_current_value">Jelenlegi érték:</string>
+    <string name="ui_edit_reading_new_value">Új érték:</string>
+    
+    <string name="ui_statistics_summary_header">Fogyasztási adatok </string>
+    <string name="ui_statistics_summary_minimum_consumption">Legkisebb fogyasztás:</string>
+    <string name="ui_statistics_summary_maximum_consumption">Legnagyobb fogyasztás:</string>
+    <string name="ui_statistics_summary_all_consumption">Összes fogyasztás:</string>
+    <string name="ui_statistics_summary_average_consumption">Napi átlagfogyasztás:</string>
+    
+    <string name="ui_statistics_charts_interval">Intervallum: </string>
+    <string name="ui_statistics_charts_chart_title">Napi fogyasztás</string>
+    <string name="ui_statistics_charts_chart_date">Dátum</string>
+    <string name="ui_statistics_charts_chart_consumption">Fogyasztás</string>
+    <string name="ui_statistics_charts_reading_time">Leolvasás ideje:</string>
+    <string name="ui_statistics_charts_reading_difference">Napi fogyasztás:</string>
+
+    <string name="ui_bills_row_due">Határidő:</string>
+    <string name="ui_bills_row_price">Összeg:</string>
+    <string name="ui_bills_row_consumption">Fogyasztás:</string>
+    <string name="ui_bills_row_consumption_short">Fogy.:</string>
+    <string name="ui_bills_no_bill">Nincs fizetetlen számla</string>
+    <string name="ui_bills_settled_bills">Egyenlített számlák</string>
+    
+    <string name="ui_bills_new_bill">Új számla</string>
+    <string name="ui_bills_new_bill_other_type">Adja meg a számla típusát</string>
+    
+    <string name="ui_bills_settle_bill_header">Számla befizetése</string>
+    <string name="ui_bills_settle_bill_text">Befizette már ezt a számlát?</string>
+    
+    <string name="ui_base_location">Hely:</string>
+    <string name="ui_locations_locations">Helyek</string>
+    <string name="ui_locations_existing_locations">Saját helyek:</string>
+    <string name="ui_locations_active_location">Aktív hely</string>
+    <string name="ui_locations_new_location">Új hely</string>
+    <string name="ui_locations_no_active_location">Nincs aktív hely</string>
+    <string name="ui_locations_name">Név:</string>
+    <string name="ui_locations_name_hint">Az új hely neve</string>
+    <string name="ui_locations_address">Cím:</string>
+    <string name="ui_locations_type">Típus:</string>
+    <string name="ui_locations_delete">Töröl</string>
+    <string name="ui_locations_delete_warning_header">Hely törlése</string>
+    <string name="ui_locations_delete_warning">Figyelem! A hely törlésekor az összes kapcsolódó rögzített adat elveszik!\n\nBiztosan töröljem a profilt?</string>
+    
+    <string name="ui_preferences_category_reading">Óraállás beállítások</string>
+    <string name="ui_preferences_category_bill">Számla beállítások</string>
+    <string name="ui_preferences_reading_prices">Árak</string>
+    <string name="ui_preferences_bill_notification">Számlaértesítések</string>
+    <string name="ui_preferences_bill_notification_enable">Értesítések bekapcsolása</string>
+    <string name="ui_preferences_bill_notification_enable_desc">Ha engedélyezi ezt az opciót, az alkalmazás figyelmeztetést küld, ha közeleg egy számla fizetési határideje</string>
+    <string name="ui_preferences_bill_notification_enable_period">Előretekintés (nap)</string>
+    <string name="ui_preferences_bill_notification_enable_period_desc">Ha egy számla a beállított napon belül lejár, a szoftver naponta egy értesítést jelenít mega számla befizetéséig.</string>
+    <string name="ui_preferences_bill_notification_enable_time">Értesítés ideje</string>
+    <string name="ui_preferences_bill_period">Számlázási periódusok</string>
+    <string name="ui_preferences_changelog">Changelog</string>
+    <string name="ui_preferences_enable_changelog">Changelog engedélyezése</string>
+    <string name="ui_preferences_enable_changelog_desc">Mutasd a változások listáját minden szoftverfrissítés után</string>
+    <string name="ui_preferences_show_changelog">Changelog megnyitása</string>
+    
+    <string name="ui_export_readings">Óraállások exportálása</string>
+    <string name="ui_export_backup">Adatbázis mentése</string>
+    <string name="ui_export_restore">Mentett adatbázis visszaállítása</string>
+    <string name="ui_export_backup_successful">Sikeres mentés</string>
+    <string name="ui_export_backup_unsuccessful">Sikertelen mentés!</string>
+	<string name="ui_export_backup_in_progress">Mentés folyamatban…</string>
+	<string name="ui_export_restore_in_progress">Helyreállítás folyamatban…</string>
+    <string name="ui_export_restore_successful">Sikeres visszaállítás</string>
+    <string name="ui_export_restore_unsuccessful">Sikertelen visszaállítás!</string>
+    <string name="ui_export_restore_no_backups">Nincs mentett adatbázis!</string>
+    <string name="ui_export_restore_sd_unavailable">SD kártya nem elérhető!</string>
+    
+    <string name="ui_changelog_loading">Changelog betöltése…</string>
+    
+    <string name="notification_title">Lejáró számla</string>
+    <string name="notification_due_bill">befizetendő számlát találtam!</string>
+    <string name="notification_due_bills">befizetendő számlát találtam!</string>
+    
+    <string name="error_field_is_mandatory">Kötelező</string>
+    <string name="error_fill_form">Töltse ki az összes kötelező mezőt!</string>
+    <string name="error_number_less_than_zero">Nem adhat meg negatív értéket!</string>
+    <string name="error_malformed_number">Hibás számformátum!</string>
+    <string name="error_save_unsuccessful">Mentés sikertelen!</string>
+    
+    <string name="message_save_successful">Sikeres mentés</string>
+    <string name="message_no_statistics_for_interval">A megadott időszakban nincs rögzített adat!</string>
+    <string name="message_u_sure">Biztos?</string>
+    <string name="message_delete_successful">Törlés sikeres</string>
+    <string name="message_operation_successful">A művelet sikeresen véget ért.</string>
+    <string name="message_operation_failed">Hiba történt a művelet végrehajtása közben.</string>
+    
+    <string name="date_format">yyyy.MM.dd. HH:mm</string>
+    <string name="day_date_format">yyyy.MM.dd.</string>
+    <string name="currency">Ft.</string>
+    
+    <string name="menu_locations">Helyek</string>
+    <string name="menu_settings">Beállítások</string>
+
+    <string-array name="edit_readings">
+        <item>Szerkeszt</item>
+        <item>Töröl</item>
+    </string-array>
+    
+    <string-array name="location_types">
+        <item>Lakás, lakóház</item>
+        <item>Hétvégi ház, nyaraló</item>
+        <item>Iroda, üzlet</item>
+        <item>Műhely, garázs</item>
+        <item>Egyéb</item>
+    </string-array>
+    <string-array name="reading_types">
+        <item>Gáz</item>
+        <item>Villany</item>
+        <item>Éjszakai áram</item>
+        <item>Víz</item>
+        <item>Távfűtés</item>
+    </string-array>
+    <string-array name="bill_types">
+        <item>Gázszámla</item>
+        <item>Villanyszámla</item>
+        <item>Vízszámla</item>
+        <item>Távfűtés számla</item>
+        <item>Telefonszámla</item>
+        <item>Mobiltelefon számla</item>
+        <item>TV számla</item>
+        <item>Internet számla</item>
+        <item>Lakbér</item>
+        <item>Közös költség</item>
+        <item>Egyéb, mégpedig:</item>
+    </string-array>
+    <string-array name="interval">
+        <item>Ezen a héten</item>
+        <item>Ebben a hónapban</item>
+        <!-- item>Az aktuális számlázási időszakban</item-->
+        <item>Az elmúlt 3 hónapban</item>
+        <item>Az elmúlt 6 hónapban</item>
+        <item>Idén</item>
+    </string-array>
+    <string-array name="interval_header">
+        <item>ezen a héten</item>
+        <item>ebben a hónapban</item>
+        <!-- item>az aktuális számlázási időszakban</item-->
+        <item>az elmúlt 3 hónapban</item>
+        <item>az elmúlt 6 hónapban</item>
+        <item>idén</item>
+    </string-array>
+</resources>

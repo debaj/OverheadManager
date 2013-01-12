@@ -1,0 +1,1 @@
+ALTER TABLE reading_kinds ADD COLUMN enabled boolean;

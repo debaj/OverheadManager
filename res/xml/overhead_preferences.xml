@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- PreferenceCategory android:title="@string/ui_preferences_category_reading" >
+        <PreferenceScreen
+            android:name="@string/ui_preferences_reading_prices"
+            android:title="@string/ui_preferences_reading_prices" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.debaj.overheadmanager.oldactivities.settings.ReadingsSettings"
+                android:targetPackage="com.debaj.overheadmanager.oldactivities" />
+        </PreferenceScreen>
+    </PreferenceCategory-->
+    <PreferenceCategory android:title="@string/ui_preferences_category_bill" >
+        <PreferenceScreen
+            android:name="@string/ui_preferences_bill_notification"
+            android:title="@string/ui_preferences_bill_notification" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="enableNotification"
+                android:summary="@string/ui_preferences_bill_notification_enable_desc"
+                android:title="@string/ui_preferences_bill_notification_enable" />
+
+            <EditTextPreference
+                android:dependency="enableNotification"
+                android:inputType="number"
+                android:key="notificationPeriod"
+                android:shouldDisableView="true"
+                android:summary="@string/ui_preferences_bill_notification_enable_period_desc"
+                android:title="@string/ui_preferences_bill_notification_enable_period" />
+
+            <com.debaj.overheadmanager.oldactivities.settings.TimePreference
+                android:dependency="enableNotification"
+                android:key="notificationTime"
+                android:title="@string/ui_preferences_bill_notification_enable_time" />
+        </PreferenceScreen>
+        <!--
+        PreferenceScreen
+            android:name="@string/ui_preferences_bill_period"
+            android:enabled="false"
+            android:title="@string/ui_preferences_bill_period" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:data="mydata"
+                android:targetClass="com.debaj.overheadmanager.oldactivities.settings.BillsSettings"
+                android:targetPackage="com.debaj.overheadmanager.oldactivities" />
+        </PreferenceScreen
+        -->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ui_preferences_changelog" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="enableChangelog"
+                android:summary="@string/ui_preferences_enable_changelog_desc"
+                android:title="@string/ui_preferences_enable_changelog" />
+
+            <PreferenceScreen
+                android:name="@string/ui_preferences_show_changelog"
+                android:title="@string/ui_preferences_show_changelog" >
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:data="mydata"
+                    android:targetClass="com.debaj.overheadmanager.oldactivities.ChangeLogActivity"
+                    android:targetPackage="com.debaj.overheadmanager.oldactivities" />
+            </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
