@@ -1,7 +1,8 @@
-package com.debaj.overheadmanager.db.helper;
+package com.debaj.overheadmanager.common;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class CalendarHelper {
     public static Calendar getTodayMidnight() {
@@ -47,5 +48,9 @@ public class CalendarHelper {
         Calendar cal = getTodayMidnight();
         cal.add(Calendar.WEEK_OF_YEAR, 1);
         return (date.getTime() <= cal.getTimeInMillis());
+    }
+    
+    public static boolean isFutureDate(Calendar calToCheck) {
+        return calToCheck.after(GregorianCalendar.getInstance());
     }
 }

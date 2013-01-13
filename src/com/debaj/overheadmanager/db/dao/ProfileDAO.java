@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
 import com.debaj.overheadmanager.db.bean.Profile;
-import com.debaj.overheadmanager.db.helper.Statements;
-import com.debaj.overheadmanager.db.helper.Tables;
+import com.debaj.overheadmanager.db.statements.Statements;
+import com.debaj.overheadmanager.db.statements.Tables;
 
 public class ProfileDAO {
     public static enum ProfileDB {

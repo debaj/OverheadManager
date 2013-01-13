@@ -42,15 +42,28 @@ public class DashActivity extends CommonActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getSupportMenuInflater();
-        inflater.inflate(R.menu.dashboard_menu, menu);
+        inflater.inflate(R.menu.menu_dashboard, menu);
         return true;
     }
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        boolean handled = false;
+        Intent intent = null;
         switch(item.getItemId()) {
+            case R.id.location:
+                intent = new Intent(this, LocationsActivity.class);
+                handled = true;
+                break;
+            case R.id.settings:
+                intent = new Intent(this, SettingsActivity.class);
+                handled = true;
+                break;
         }
-        return super.onOptionsItemSelected(item);
+        if (intent != null) {
+            startActivity(intent);
+        }
+        return handled;
     }
 
     private void initDashboard() {
@@ -67,8 +80,8 @@ public class DashActivity extends CommonActivity {
             // Bills
             DashboardItem bills = new DashboardItem(R.drawable.ic_bills, R.string.title_activity_bills, new Intent(this, BillsActivity.class));
             intents.add(bills);
-            // Sync
-            DashboardItem export = new DashboardItem(R.drawable.ic_export, R.string.title_activity_backup, new Intent(this, BackupActivity.class));
+            // Backup
+            DashboardItem export = new DashboardItem(R.drawable.ic_backup, R.string.title_activity_backup, new Intent(this, BackupActivity.class));
             intents.add(export);
         }
         

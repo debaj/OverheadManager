@@ -1,4 +1,4 @@
-package com.debaj.overheadmanager.db.helper;
+package com.debaj.overheadmanager.db.statements;
 
 public enum Statements {
     

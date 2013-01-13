@@ -2,162 +2,63 @@
 <resources>
 
     <string name="app_name">Overhead Manager</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_start">Overhead Manager</string>
+
+    <!-- ACTIVITY TITLES -->
     <string name="title_activity_meter_reading">Readings</string>
-    <string name="title_activity_common">CommonActivity</string>
     <string name="title_activity_bills">Bills</string>
     <string name="title_activity_backup">Backup &amp; Restore</string>
     <string name="title_activity_stats">Statistics</string>
     <string name="title_activity_locations">Locations</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- BUTTONS -->
     <string name="button_ok">OK</string>
-    <string name="button_cancel">Cancel</string>
-    <string name="button_set">Set</string>
-    <string name="button_yes">Yes</string>
-    <string name="button_no">No</string>
-    <string name="button_save">Save</string>
-    <string name="button_new">New</string>
-    <string name="ui_readings_readings">Take a meter reading</string>
-    <string name="ui_readings_value">Reading:</string>
-    <string name="ui_readings_in_progress">Save in progress…</string>
-    <string name="ui_readings_value_hint">Numbers only</string>
-    <string name="ui_readings_lesser_than_previous">The reading you are about to take is less than the previously taken value! Are you sure?</string>
-    <string name="ui_statistics_statistics">Statistics</string>
-    <string name="ui_statistics_interval">Interval:</string>
-    <string name="ui_statistics_readings">Individual readings</string>
-    <string name="ui_statistics_charts">Graphs</string>
-    <string name="ui_statistics_summary">Summary</string>
-    <string name="ui_statistics_show">Show</string>
-    <string name="ui_statistics_readings_meter">Reading: </string>
-    <string name="ui_statistics_readings_difference">Consumption: </string>
-    <string name="ui_edit_reading_current_value">Current value:</string>
-    <string name="ui_edit_reading_new_value">New value:</string>
-    <string name="ui_statistics_summary_header">Consumption data </string>
-    <string name="ui_statistics_summary_minimum_consumption">Min. consumption:</string>
-    <string name="ui_statistics_summary_maximum_consumption">Max. consumption:</string>
-    <string name="ui_statistics_summary_all_consumption">All consumption:</string>
-    <string name="ui_statistics_summary_average_consumption">Daily average:</string>
-    <string name="ui_statistics_charts_interval">Interval: </string>
-    <string name="ui_statistics_charts_chart_title">Daily consumption</string>
-    <string name="ui_statistics_charts_chart_date">Date</string>
-    <string name="ui_statistics_charts_chart_consumption">Consumption</string>
-    <string name="ui_statistics_charts_reading_time">Time of reading:</string>
-    <string name="ui_statistics_charts_reading_difference">Daily consumption:</string>
-    <string name="ui_bills_row_due">Due:</string>
-    <string name="ui_bills_row_price">Sum:</string>
-    <string name="ui_bills_row_consumption">Units Used:</string>
-    <string name="ui_bills_row_consumption_short">Used:</string>
-    <string name="ui_bills_no_bill">No active bills</string>
-    <string name="ui_bills_settled_bills">Settled bills</string>
-    <string name="ui_bills_new_bill">New bill</string>
-    <string name="ui_bills_new_bill_other_type">Enter bill type</string>
-    <string name="ui_bills_settle_bill_header">Bill settled</string>
-    <string name="ui_bills_settle_bill_text">Did you settle this bill?</string>
-    <string name="ui_base_location">Location:</string>
-    <string name="ui_locations_locations">Locations</string>
-    <string name="ui_locations_existing_locations">Own locations:</string>
-    <string name="ui_locations_active_location">Active location</string>
-    <string name="ui_locations_new_location">New location</string>
-    <string name="ui_locations_no_active_location">No active location</string>
-    <string name="ui_locations_name">Name:</string>
-    <string name="ui_locations_name_hint">The name of the location</string>
-    <string name="ui_locations_address">Address:</string>
-    <string name="ui_locations_type">Type:</string>
-    <string name="ui_locations_delete">Delete</string>
-    <string name="ui_locations_delete_warning_header">Delete location</string>
-    <string name="ui_locations_delete_warning">Attention! If you delete this location, all connecting data will be erased! \n\n Are you sure?</string>
-    <string name="ui_preferences_category_reading">Reading preferences</string>
-    <string name="ui_preferences_category_bill">Bill preferences</string>
-    <string name="ui_preferences_reading_prices">Prices</string>
-    <string name="ui_preferences_bill_notification">Bill notifications</string>
-    <string name="ui_preferences_bill_notification_enable">Enable notifications</string>
-    <string name="ui_preferences_bill_notification_enable_desc">When enabled, OverheadManager notifies you about your due bills</string>
-    <string name="ui_preferences_bill_notification_enable_period">Advance in days</string>
-    <string name="ui_preferences_bill_notification_enable_period_desc">If a bill is due in the days you set, a notification will appear in the notification area.</string>
-    <string name="ui_preferences_bill_notification_enable_time">Notification time</string>
-    <string name="ui_preferences_bill_period">Billing periods</string>
-    <string name="ui_preferences_changelog">Changelog</string>
-    <string name="ui_preferences_enable_changelog">Enable changelog</string>
-    <string name="ui_preferences_enable_changelog_desc">Show changelog after every software update</string>
-    <string name="ui_preferences_show_changelog">Show changelog</string>
-    <string name="ui_export_readings">Export readings</string>
-    <string name="ui_export_backup">Backup database</string>
-    <string name="ui_export_restore">Restore database</string>
-    <string name="ui_export_backup_successful">Backup successful</string>
-    <string name="ui_export_backup_unsuccessful">Backup unsuccessful!</string>
-    <string name="ui_export_backup_in_progress">Backup is in progress…</string>
-    <string name="ui_export_restore_in_progress">Restore is in progress…</string>
-    <string name="ui_export_restore_successful">Restore successful</string>
-    <string name="ui_export_restore_unsuccessful">Restore unsuccessful!</string>
-    <string name="ui_export_restore_no_backups">No backups found!</string>
-    <string name="ui_export_restore_sd_unavailable">SD card unavailable!</string>
-    <string name="ui_changelog_loading">Loading changelog…</string>
-    <string name="notification_title">Due bill</string>
-    <string name="notification_due_bill">due bill found!</string>
-    <string name="notification_due_bills">due bills found!</string>
-    <string name="error_field_is_mandatory">Mandatory</string>
-    <string name="error_fill_form">Please fill all mandatory fields!</string>
-    <string name="error_number_less_than_zero">Negative values are not allowed!</string>
-    <string name="error_malformed_number">Malformad number!</string>
-    <string name="error_save_unsuccessful">Save unsuccessful!</string>
-    <string name="message_save_successful">Save successful</string>
-    <string name="message_no_statistics_for_interval">No readings for the specified interval!</string>
-    <string name="message_u_sure">Are you sure?</string>
-    <string name="message_delete_successful">Deleted successfully</string>
-    <string name="message_operation_successful">Operation successful</string>
-    <string name="message_operation_failed">Operation failed</string>
-    <string name="date_format">dd/MM/yyyy HH:mm</string>
-    <string name="day_date_format">dd/MM/yyyy</string>
-    <string name="currency">USD</string>
+
+    <!-- ACTIVITY CONTENTS -->
+    <string name="act_changelog_loading">Loading changelog…</string>
+    <string name="act_meter_reading_reading_value">Meter reading</string>
+    <string name="act_meter_reading_reading_value_hint">Numbers only</string>
+    <string name="act_meter_reading_reading_kind">Meter</string>
+    <string name="act_meter_reading_past_reading">I would like to set the date manually</string>
+    <string name="act_meter_reading_select_date">Date of the reading:</string>
+    <string name="act_meter_reading_select_date_error">Please set a past date!</string>
+
+    <!-- MESSAGES -->
+    <string name="message_general_please_wait">Please wait…</string>
+    <string name="message_general_operation_finished">Operation finished successfully.</string>
+    <string name="message_general_operation_error">Operation was unsuccessful.</string>
+    <string name="message_error_field_is_mandatory">Mandatory field</string>
     
+    <!-- NOTIFICATIONS -->
+    <string name="notification_due_bill_title">Due bill</string>
+    <string name="notification_due_bill_message">due bill found!</string>
+    <string name="notification_due_bill_message_plural">due bills found!</string>
+
+    <!-- MENUS -->
     <string name="menu_locations">Locations</string>
     <string name="menu_settings">Settings</string>
-    
-    <string-array name="edit_readings">
-        <item>Edit</item>
-        <item>Delete</item>
-    </string-array>
-    <string-array name="location_types">
-        <item>Flat/house</item>
-        <item>Weekend house/bungalow</item>
-        <item>Office/shop</item>
-        <item>Workshop/garage</item>
-        <item>Other</item>
-    </string-array>
-    <string-array name="reading_types">
-        <item>Gas</item>
-        <item>Electricity</item>
-        <item>Night rate electricity</item>
-        <item>Water</item>
-        <item>District heating</item>
-    </string-array>
-    <string-array name="bill_types">
-        <item>Gas bill</item>
-        <item>Electricity bill</item>
-        <item>Water bill</item>
-        <item>District heating bill</item>
-        <item>Phone bill</item>
-        <item>Cellular bill</item>
-        <item>TV bill</item>
-        <item>Internet bill</item>
-        <item>Rental fee</item>
-        <item>Common expenses</item>
-        <item>Other, namely:</item>
-    </string-array>
-    <string-array name="interval">
-        <item>This week</item>
-        <item>This month</item>
-        <!-- item>Actual billing period</item -->
-        <item>Last 3 months</item>
-        <item>Last 6 months</item>
-        <item>This year</item>
-    </string-array>
-    <string-array name="interval_header">
-        <item>in this week</item>
-        <item>in this month</item>
-        <!-- item>in the actual billing period</item -->
-        <item>in the last 3 months</item>
-        <item>in the last 6 months</item>
-        <item>in the last year</item>
-    </string-array>
+    <string name="menu_save">Save</string>
+    <string name="menu_clear">Clear</string>
+
+    <!-- PREFERENCES -->
+    <string name="prefs_category_reading">Reading preferences</string>
+    <string name="prefs_category_bill">Bill preferences</string>
+    <string name="prefs_reading_prices">Prices</string>
+    <string name="prefs_bill_notification">Bill notifications</string>
+    <string name="prefs_bill_notification_enable">Enable notifications</string>
+    <string name="prefs_bill_notification_enable_desc">When enabled, OverheadManager notifies you about your due bills</string>
+    <string name="prefs_bill_notification_enable_period">Advance in days</string>
+    <string name="prefs_bill_notification_enable_period_desc">If a bill is due in the days you set, a notification will appear in the notification area.</string>
+    <string name="prefs_bill_notification_enable_time">Notification time</string>
+    <string name="prefs_bill_period">Billing periods</string>
+    <string name="prefs_changelog">Changelog</string>
+    <string name="prefs_enable_changelog">Enable changelog</string>
+    <string name="prefs_enable_changelog_desc">Show changelog after every software update</string>
+    <string name="prefs_show_changelog">Show changelog</string>
+
+    <!-- FORMATS -->
+    <string name="format_date">dd/MM/yyyy HH:mm</string>
+    <string name="format_date_day_only">dd/MM/yyyy</string>
+    <string name="format_currency">USD</string>
+
 </resources>

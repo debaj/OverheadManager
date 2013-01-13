@@ -9,10 +9,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
+import com.debaj.overheadmanager.common.CalendarHelper;
 import com.debaj.overheadmanager.db.bean.Reading;
-import com.debaj.overheadmanager.db.helper.CalendarHelper;
-import com.debaj.overheadmanager.db.helper.Statements;
-import com.debaj.overheadmanager.db.helper.Tables;
+import com.debaj.overheadmanager.db.statements.Statements;
+import com.debaj.overheadmanager.db.statements.Tables;
 
 public class ReadingDAO {
     public static enum ReadingDB {

@@ -3,7 +3,7 @@ package com.debaj.overheadmanager;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
-public class StatsActivity extends CommonActivity {
+public class LocationsActivity extends CommonActivity {
 
     @Override
     public void inflateView() {

@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
 import com.debaj.overheadmanager.db.bean.ReadingKind;
-import com.debaj.overheadmanager.db.helper.Statements;
-import com.debaj.overheadmanager.db.helper.Tables;
+import com.debaj.overheadmanager.db.statements.Statements;
+import com.debaj.overheadmanager.db.statements.Tables;
 
 public class ReadingKindDAO {
     public static enum ReadingKindDB {

@@ -16,7 +16,7 @@ public class StringUtil {
     }
     
     public static String formatDate(Date date, Context context) {
-        SimpleDateFormat df = new SimpleDateFormat(context.getString(R.string.date_format));
+        SimpleDateFormat df = new SimpleDateFormat(context.getString(R.string.format_date));
         return df.format(date);
     }
     
@@ -26,11 +26,11 @@ public class StringUtil {
     }
     
     public static String formatDayDate(Date date, Context context) {
-        SimpleDateFormat df = new SimpleDateFormat(context.getString(R.string.day_date_format));
+        SimpleDateFormat df = new SimpleDateFormat(context.getString(R.string.format_date_day_only));
         return df.format(date);
     }
     
     public static String formatCurrency (float amount, Context context) {
-        return Float.toString(amount) + " " + context.getString(R.string.currency);
+        return Float.toString(amount) + " " + context.getString(R.string.format_currency);
     }
 }

@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/location" 
           android:title="@string/menu_locations"
-          android:icon="@drawable/ic_profiles"
+          android:icon="@drawable/ic_locations"
           android:showAsAction="always|withText" />
     <item android:id="@+id/settings" 
           android:title="@string/menu_settings"

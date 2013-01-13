@@ -14,6 +14,7 @@ import com.google.ads.AdView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
 import com.debaj.overheadmanager.R;
 import com.debaj.overheadmanager.db.DatabaseManager;
 
@@ -68,6 +69,9 @@ public abstract class CommonActivity extends SherlockActivity {
     
     @Override
     public abstract boolean onCreateOptionsMenu(Menu menu);
+    
+    @Override
+    public abstract boolean onOptionsItemSelected(MenuItem item);
     
     public abstract void inflateView();
 }

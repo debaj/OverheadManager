@@ -26,7 +26,7 @@ public class ChangeLogActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.changelog);
+        setContentView(R.layout.activity_changelog);
         new ChangeLogTask(this).execute();
     }
 
@@ -54,7 +54,7 @@ public class ChangeLogActivity extends Activity {
         @Override
         protected void onPreExecute() {
             dialog.setCancelable(false);
-            dialog.setMessage(getString(R.string.ui_changelog_loading));
+            dialog.setMessage(getString(R.string.act_changelog_loading));
             dialog.show();
         }
 
@@ -92,5 +92,4 @@ public class ChangeLogActivity extends Activity {
             }
         }
     }
-
 }

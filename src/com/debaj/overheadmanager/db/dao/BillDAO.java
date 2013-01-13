@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import com.debaj.overheadmanager.common.CalendarHelper;
 import com.debaj.overheadmanager.db.bean.Bill;
-import com.debaj.overheadmanager.db.helper.CalendarHelper;
-import com.debaj.overheadmanager.db.helper.Statements;
-import com.debaj.overheadmanager.db.helper.Tables;
+import com.debaj.overheadmanager.db.statements.Statements;
+import com.debaj.overheadmanager.db.statements.Tables;
 
 import android.content.ContentValues;
 import android.database.Cursor;
