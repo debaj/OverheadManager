@@ -1,4 +1,0 @@
-CREATE TABLE profiles (_id integer primary key autoincrement, name text not null, address text, kind text not null, UNIQUE ( name ) ON CONFLICT ROLLBACK);
-CREATE TABLE reading_kinds (_id integer primary key autoincrement, name text not null, unit text not null, price float not null, discount_price float not null);
-CREATE TABLE readings (_id integer primary key autoincrement, time datetime not null, value float not null, kind integer not null, profile integer, FOREIGN KEY(kind) references reading_kinds(_id), FOREIGN KEY(profile) references profiles(_id));
-CREATE TABLE bills (_id integer primary key autoincrement, due_date datetime not null, sum float not null, type text not null, paid boolean not null, profile integer, FOREIGN KEY(profile) references profiles(_id));

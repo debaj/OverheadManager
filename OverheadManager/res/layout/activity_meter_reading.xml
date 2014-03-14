@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meter_reading_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/lbl_reading_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/act_meter_reading_reading_value" />
+
+            <EditText
+                android:id="@+id/reading_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/act_meter_reading_reading_value_hint"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_reading_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/act_meter_reading_reading_kind" />
+
+            <Spinner
+                android:id="@+id/reading_kind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/past_date_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/act_meter_reading_past_reading" />
+
+    <RelativeLayout
+        android:id="@+id/previous_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/lbl_previous_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            android:text="@string/act_meter_reading_select_date" />
+
+        <DatePicker
+            android:id="@+id/previous_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_previous_date"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/error_future_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"
+            android:text="@string/act_meter_reading_select_date_error"
+            android:textAppearance="@style/error_message"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>
