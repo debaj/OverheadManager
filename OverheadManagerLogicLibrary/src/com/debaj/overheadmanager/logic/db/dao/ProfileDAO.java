@@ -8,9 +8,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-import com.debaj.overheadmanager.db.bean.Profile;
 import com.debaj.overheadmanager.logic.db.Statements;
 import com.debaj.overheadmanager.logic.db.Tables;
+import com.debaj.overheadmanager.logic.model.bean.Profile;
 
 public class ProfileDAO {
     public static enum ProfileDB {

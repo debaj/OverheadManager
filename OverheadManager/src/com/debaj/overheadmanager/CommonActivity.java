@@ -1,24 +1,25 @@
 package com.debaj.overheadmanager;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
 import com.debaj.overheadmanager.R;
 import com.debaj.overheadmanager.logic.db.DatabaseManager;
 
-public abstract class CommonActivity extends SherlockActivity {
+public abstract class CommonActivity extends ActionBarActivity {
     private static final String AD_UNIT_ID = "a14f172cfc65622";
     
     public static SharedPreferences preferences;
@@ -40,21 +41,8 @@ public abstract class CommonActivity extends SherlockActivity {
         }
         actionBar = getSupportActionBar();
         content = (RelativeLayout) findViewById(R.id.content);
-        correctActionBarBackground();
         setupAd();        
         inflateView();
-    }
-
-    private void correctActionBarBackground() {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-            BitmapDrawable bg = (BitmapDrawable)getResources().getDrawable(R.drawable.bg_striped);
-            bg.setTileModeXY(TileMode.REPEAT, TileMode.REPEAT);
-            actionBar.setBackgroundDrawable(bg);
-
-            BitmapDrawable bgSplit = (BitmapDrawable)getResources().getDrawable(R.drawable.bg_striped_split_img);
-            bgSplit.setTileModeXY(TileMode.REPEAT, TileMode.REPEAT);
-            actionBar.setSplitBackgroundDrawable(bgSplit);
-        }
     }
     
     private void setupAd() {

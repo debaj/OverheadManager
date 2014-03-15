@@ -5,8 +5,8 @@ import java.util.List;
 import com.debaj.overheadmanager.BillsActivity;
 import com.debaj.overheadmanager.R;
 import com.debaj.overheadmanager.logic.db.DatabaseManager;
+import com.debaj.overheadmanager.logic.db.dao.BillDAO;
 import com.debaj.overheadmanager.logic.model.bean.Bill;
-import com.debaj.overheadmanager.logic.model.bean.BillDAO;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -43,6 +43,7 @@ public class AlarmReceiver extends BroadcastReceiver {
     private void buildNotification() {
         StringBuilder alarmText = new StringBuilder();
         alarmText.append(dueBills).append(" ");
+        // TODO plurals.xml
         if (dueBills == 1) {
             alarmText.append(context
                     .getString(R.string.notification_due_bill_message));

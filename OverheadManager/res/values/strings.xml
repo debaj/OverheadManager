@@ -22,12 +22,6 @@
     <string name="act_meter_reading_past_reading">I would like to set the date manually</string>
     <string name="act_meter_reading_select_date">Date of the reading:</string>
     <string name="act_meter_reading_select_date_error">Please set a past date!</string>
-
-    <!-- MESSAGES -->
-    <string name="message_general_please_wait">Please wait…</string>
-    <string name="message_general_operation_finished">Operation finished successfully.</string>
-    <string name="message_general_operation_error">Operation was unsuccessful.</string>
-    <string name="message_error_field_is_mandatory">Mandatory field</string>
     
     <!-- NOTIFICATIONS -->
     <string name="notification_due_bill_title">Due bill</string>
@@ -55,10 +49,5 @@
     <string name="prefs_enable_changelog">Enable changelog</string>
     <string name="prefs_enable_changelog_desc">Show changelog after every software update</string>
     <string name="prefs_show_changelog">Show changelog</string>
-
-    <!-- FORMATS -->
-    <string name="format_date">dd/MM/yyyy HH:mm</string>
-    <string name="format_date_day_only">dd/MM/yyyy</string>
-    <string name="format_currency">USD</string>
 
 </resources>

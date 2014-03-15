@@ -1,7 +1,7 @@
 package com.debaj.overheadmanager;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class LocationsActivity extends CommonActivity {
 

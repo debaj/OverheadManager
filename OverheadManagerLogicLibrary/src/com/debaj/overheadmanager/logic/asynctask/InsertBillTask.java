@@ -1,8 +1,7 @@
-package com.debaj.overheadmanager.tasks;
+package com.debaj.overheadmanager.logic.asynctask;
 
-import com.debaj.overheadmanager.logic.asynctask.AsyncCallback;
+import com.debaj.overheadmanager.logic.db.dao.BillDAO;
 import com.debaj.overheadmanager.logic.model.bean.Bill;
-import com.debaj.overheadmanager.logic.model.bean.BillDAO;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

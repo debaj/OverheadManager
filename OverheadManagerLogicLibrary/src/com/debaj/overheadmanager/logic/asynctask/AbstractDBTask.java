@@ -1,13 +1,12 @@
-package com.debaj.overheadmanager.tasks;
+package com.debaj.overheadmanager.logic.asynctask;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 
-import com.debaj.overheadmanager.R;
-import com.debaj.overheadmanager.logic.asynctask.AsyncCallback;
 import com.debaj.overheadmanager.logic.db.DatabaseManager;
+import com.debaj.overheadmanagerlogiclibrary.R;
 
 public abstract class AbstractDBTask extends AsyncTask<Void, Void, Object> {
 

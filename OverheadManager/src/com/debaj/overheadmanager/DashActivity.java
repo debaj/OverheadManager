@@ -8,14 +8,14 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.view.MenuInflater;
 import com.debaj.overheadmanager.viewhelper.DashboardItem;
 import com.debaj.overheadmanager.viewhelper.IntentAdapter;
 
@@ -34,14 +34,14 @@ public class DashActivity extends CommonActivity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view,
                     int position, long id) {
-                startActivity(intents.get(position).getIntent());
+                DashActivity.this.startActivity(intents.get(position).getIntent());
             }
         });
     }
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getSupportMenuInflater();
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_dashboard, menu);
         return true;
     }
@@ -52,11 +52,11 @@ public class DashActivity extends CommonActivity {
         Intent intent = null;
         switch(item.getItemId()) {
             case R.id.location:
-                intent = new Intent(this, LocationsActivity.class);
+                intent = new Intent(DashActivity.this, LocationsActivity.class);
                 handled = true;
                 break;
             case R.id.settings:
-                intent = new Intent(this, SettingsActivity.class);
+                intent = new Intent(DashActivity.this, SettingsActivity.class);
                 handled = true;
                 break;
         }

@@ -5,9 +5,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-import com.debaj.overheadmanager.db.bean.ReadingKind;
 import com.debaj.overheadmanager.logic.db.Statements;
 import com.debaj.overheadmanager.logic.db.Tables;
+import com.debaj.overheadmanager.logic.model.bean.ReadingKind;
 
 public class ReadingKindDAO {
     public static enum ReadingKindDB {

@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
 
-import com.debaj.overheadmanager.R;
+import com.debaj.overheadmanagerlogiclibrary.R;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

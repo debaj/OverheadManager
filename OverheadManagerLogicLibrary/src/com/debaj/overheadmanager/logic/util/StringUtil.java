@@ -3,9 +3,9 @@ package com.debaj.overheadmanager.logic.util;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import android.content.Context;
+import com.debaj.overheadmanagerlogiclibrary.R;
 
-import com.debaj.overheadmanager.R;
+import android.content.Context;
 
 public class StringUtil {
     

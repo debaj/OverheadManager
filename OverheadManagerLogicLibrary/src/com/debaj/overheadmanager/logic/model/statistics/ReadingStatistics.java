@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.debaj.overheadmanager.common.StringUtil;
 import com.debaj.overheadmanager.logic.model.bean.Reading;
+import com.debaj.overheadmanager.logic.util.StringUtil;
 
 public class ReadingStatistics {
 

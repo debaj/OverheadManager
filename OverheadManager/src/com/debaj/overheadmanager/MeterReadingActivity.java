@@ -2,9 +2,19 @@ package com.debaj.overheadmanager;
 
 import java.util.GregorianCalendar;
 
+import com.debaj.overheadmanager.logic.asynctask.AsyncCallback;
+import com.debaj.overheadmanager.logic.asynctask.DbResult;
+import com.debaj.overheadmanager.logic.asynctask.InsertReadingTask;
+import com.debaj.overheadmanager.logic.model.bean.Reading;
+import com.debaj.overheadmanager.logic.util.CalendarUtil;
+import com.debaj.overheadmanager.logic.util.StringUtil;
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -15,17 +25,6 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
-import com.debaj.overheadmanager.logic.asynctask.AsyncCallback;
-import com.debaj.overheadmanager.logic.model.bean.Reading;
-import com.debaj.overheadmanager.logic.model.bean.ReadingDAO;
-import com.debaj.overheadmanager.logic.util.CalendarHelper;
-import com.debaj.overheadmanager.logic.util.StringUtil;
-import com.debaj.overheadmanager.tasks.AbstractDBTask;
-import com.debaj.overheadmanager.tasks.DbResult;
 
 public class MeterReadingActivity extends CommonActivity implements
         AsyncCallback {
@@ -64,7 +63,7 @@ public class MeterReadingActivity extends CommonActivity implements
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getSupportMenuInflater();
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_meter_reading, menu);
         return true;
     }
@@ -139,7 +138,7 @@ public class MeterReadingActivity extends CommonActivity implements
         
         GregorianCalendar calendar = new GregorianCalendar();
         calendar.set(pastDatePicker.getYear(), pastDatePicker.getMonth(), pastDatePicker.getDayOfMonth());
-        if (CalendarHelper.isFutureDate(calendar)) {
+        if (CalendarUtil.isFutureDate(calendar)) {
             isAllOk = false;
             pastDateText.setVisibility(View.INVISIBLE);
             pastDateError.setVisibility(View.VISIBLE);
@@ -152,29 +151,6 @@ public class MeterReadingActivity extends CommonActivity implements
 
     private void clear() {
         
-    }
-
-    private class InsertReadingTask extends AbstractDBTask {
-
-        private Reading reading;
-
-        public InsertReadingTask(Context context, AsyncCallback callback,
-                Reading reading) {
-            super(context, callback, true);
-            this.reading = reading;
-        }
-
-        @Override
-        protected DbResult databaseOperation(SQLiteDatabase db) {
-            DbResult result = DbResult.ERROR;
-            if (reading != null) {
-                result = (new ReadingDAO().insertReading(db, reading.getTime(),
-                        reading.getValue(), reading.getKind(),
-                        reading.getProfile()) != -1) ? DbResult.SUCCESS
-                        : DbResult.ERROR;
-            }
-            return result;
-        }
     }
 
 }
